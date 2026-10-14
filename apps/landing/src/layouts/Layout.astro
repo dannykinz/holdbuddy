@@ -1,0 +1,34 @@
+---
+import 'lenis/dist/lenis.css';
+import '../styles/global.css';
+interface Props {
+  title?: string;
+  description?: string;
+}
+const {
+  title = 'Holdbuddy | Study plans you actually finish.',
+  description = 'A study plan you commit to, one witness who cares, and no streak to lose. Meet Holdbuddy, your free study companion for Android and iPhone.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip_link" href="#main_content">
+      Skip to content
+    </a>
+    <slot />
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>

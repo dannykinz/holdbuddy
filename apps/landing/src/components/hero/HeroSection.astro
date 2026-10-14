@@ -1,0 +1,61 @@
+---
+import './hero.css';
+const students = [
+  { image: 'hero-student-1.png', alt: 'Student with dark curly hair' },
+  { image: 'hero-student-2.png', alt: 'Student wearing glasses' },
+  { image: 'hero-student-3.png', alt: 'Student with short curly hair' },
+] as const;
+const benefits = [
+  { icon: 'target.svg', label: 'A plan you commit to' },
+  { icon: 'person.svg', label: 'One witness who cares' },
+  { icon: 'refresh.svg', label: 'No streak to lose' },
+] as const;
+---
+
+<!-- Hero Section -->
+<section id="home" class="hero_section" aria-labelledby="hero_title">
+  <div class="hero_contents">
+    <h1 id="hero_title" class="hero_title" data-reveal>
+      <span>Study plans you</span>
+      <span class="hero_title_line">
+        <span class="student_faces">
+          {students.map(({ image, alt }) => (
+            <img src={`/images/${image}`} width="94" height="94" alt={alt} />
+          ))}
+        </span>
+        <span>actually finish.</span>
+      </span>
+    </h1>
+    <ul class="hero_benefits" aria-label="Why Holdbuddy" data-reveal>
+      {benefits.map(({ icon, label }) => (
+        <li>
+          <img src={`/images/${icon}`} width="18" height="18" alt={label} aria-hidden="true" />
+          <span>{label}</span>
+        </li>
+      ))}
+    </ul>
+    <div class="hero_cta" data-reveal>
+      <a class="button hero_button" href="#get_the_app">
+        Get Holdbuddy, it’s free
+        <img
+          src="/images/arrow-light.svg"
+          width="18"
+          height="18"
+          alt="Get the app"
+          aria-hidden="true"
+        />
+      </a>
+      <p>Android and iPhone · no card needed</p>
+    </div>
+  </div>
+  <img
+    class="app_preview"
+    src="/images/app-preview.png"
+    width="1312"
+    height="560"
+    alt="Holdbuddy study path, today's focus session, and weekly progress on three phones"
+    fetchpriority="high"
+    decoding="async"
+    data-reveal
+  />
+</section>

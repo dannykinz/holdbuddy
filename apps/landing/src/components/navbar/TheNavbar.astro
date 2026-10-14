@@ -1,0 +1,18 @@
+---
+import './navbar.css';
+import Brand from '../brand/Brand.astro';
+import { navigation } from '../../data/landing';
+---
+
+<!-- Navigation -->
+<header class="site_header">
+  <Brand />
+  <nav class="desktop_nav" aria-label="Main navigation">
+    {navigation.map(({ label, href }) => (
+      <a href={href}>{label}</a>
+    ))}
+  </nav>
+  <a class="button nav_button" href="/#get_the_app">
+    Get the app
+  </a>
+</header>

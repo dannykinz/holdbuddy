@@ -1,0 +1,21 @@
+---
+import './page_header.css';
+
+interface Props {
+  label: string;
+  title: string;
+  description?: string;
+  updatedDate?: string;
+}
+
+const { label, title, description, updatedDate } = Astro.props;
+---
+
+<!-- Page Header -->
+<header class="page_header">
+  <p class="eyebrow">{label}</p>
+  <h1>{title}</h1>
+  {description && <p class="page_description">{description}</p>}
+  {updatedDate && <p class="page_updated">Last updated {updatedDate}</p>}
+  <slot />
+</header>

@@ -1,0 +1,79 @@
+---
+import './pricing.css';
+interface Plan {
+  name: string;
+  price: string;
+  period: string;
+  description: string;
+  features: readonly string[];
+  action: string;
+  dark: boolean;
+}
+const plans: readonly Plan[] = [
+  {
+    name: 'Free',
+    price: '₦0',
+    period: 'forever',
+    description: 'Everything Holdbuddy does, with ads outside study time. Never during a session.',
+    features: [
+      'Unlimited plans and chapters',
+      'Witness and partners',
+      'Focus mode, PDFs and audio',
+      'Deadline reminders',
+    ],
+    action: 'Get Holdbuddy',
+    dark: false,
+  },
+  {
+    name: 'Pro',
+    price: '₦2,500',
+    period: '/ month',
+    description: 'Or ₦12,000 once for lifetime. Pay through Google Play or the App Store.',
+    features: ['No ads, anywhere', 'Monthly progress report', 'App icons and themes'],
+    action: 'Go Pro',
+    dark: true,
+  },
+];
+---
+
+<!-- Pricing Section -->
+<section id="pricing" class="pricing_section" aria-labelledby="pricing_title">
+  <div class="section_heading" data-reveal>
+    <p class="eyebrow">Pricing</p>
+    <h2 id="pricing_title">Every feature is free.</h2>
+    <p class="section_subheading">Pro just clears the noise.</p>
+  </div>
+  <div class="pricing_cards">
+    {plans.map(({ name, price, period, description, features, action, dark }) => (
+      <article
+        class:list={['pricing_card', { dark_plan: dark }]}
+        aria-label={`${name} plan`}
+        data-reveal
+      >
+        <h3>{name}</h3>
+        <p class="price">
+          <span>{price}</span>
+          <span class="price_period">{period}</span>
+        </p>
+        <p class="plan_description">{description}</p>
+        <ul class="plan_features">
+          {features.map((feature) => (
+            <li>
+              <img
+                src={`/images/check-${dark ? 'light' : 'green'}.svg`}
+                width="18"
+                height="18"
+                alt="Included"
+                aria-hidden="true"
+              />
+              <span>{feature}</span>
+            </li>
+          ))}
+        </ul>
+        <a class="button plan_button" href="#get_the_app">
+          {action}
+        </a>
+      </article>
+    ))}
+  </div>
+</section>

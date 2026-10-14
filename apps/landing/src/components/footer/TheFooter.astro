@@ -1,0 +1,52 @@
+---
+import './footer.css';
+import Brand from '../brand/Brand.astro';
+import { appLinks, navigation } from '../../data/landing';
+interface Props {
+  compact?: boolean;
+}
+const { compact = false } = Astro.props;
+
+const columns = [
+  { title: 'Product', links: navigation },
+  {
+    title: 'Support',
+    links: [
+      { label: 'Help centre', href: appLinks.support },
+      { label: 'Contact us', href: appLinks.contact },
+      { label: 'Delete account', href: appLinks.deleteAccount },
+    ],
+  },
+  {
+    title: 'Legal',
+    links: [
+      { label: 'Privacy Policy', href: appLinks.privacy },
+      { label: 'Terms of Service', href: appLinks.terms },
+    ],
+  },
+] as const;
+---
+
+<!-- Footer -->
+<footer class:list={['site_footer', { compact_footer: compact }]}>
+  <div class="footer_top">
+    <div class="footer_brand">
+      <Brand />
+      <p>Study plans you actually finish.</p>
+    </div>
+    <div class="footer_columns">
+      {columns.map(({ title, links }) => (
+        <nav class="footer_column" aria-label={`${title} links`}>
+          <h3>{title}</h3>
+          {links.map(({ label, href }) => (
+            <a href={href}>{label}</a>
+          ))}
+        </nav>
+      ))}
+    </div>
+  </div>
+  <div class="footer_bottom">
+    <p>© 2026 Holdbuddy. All rights reserved.</p>
+    <p>Made for students who keep going.</p>
+  </div>
+</footer>

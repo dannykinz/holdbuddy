@@ -1,0 +1,215 @@
+/* Support Center */
+
+.support_center,
+.topic_card,
+.help_articles,
+.help_article summary,
+.article_answer,
+.contact_card {
+  display: flex;
+}
+
+.help_topics,
+.support_body {
+  display: grid;
+}
+
+.support_center {
+  flex-direction: column;
+  gap: var(--document_header_gap);
+}
+
+.search_field {
+  width: 100%;
+  max-width: var(--search_width);
+  padding-top: var(--space_5);
+}
+
+.search_field input {
+  width: 100%;
+  min-height: var(--minimum_target_size);
+  padding: var(--space_6) var(--space_10);
+  border: var(--border_width) solid var(--color_line);
+  border-radius: var(--radius_pill);
+  background: var(--color_surface);
+  color: var(--color_text);
+  font-size: var(--font_body);
+}
+
+.help_topics {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space_10);
+  padding-inline: var(--document_gutter);
+}
+
+.topic_card {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space_4);
+  padding: var(--space_11);
+  border: var(--border_width) solid transparent;
+  border-radius: var(--radius_card);
+  text-align: left;
+  cursor: pointer;
+}
+
+.topic_card[aria-pressed='true'] {
+  border-color: var(--color_primary);
+}
+
+.topic_card strong {
+  font-size: var(--font_lead);
+  font-weight: var(--weight_semibold);
+}
+
+.topic_card span {
+  color: var(--color_muted);
+  font-size: var(--font_nav);
+  line-height: var(--leading_contents);
+}
+
+.topic_sky {
+  background: var(--color_sky_soft);
+}
+
+.topic_pink {
+  background: var(--color_pink_soft);
+}
+
+.topic_violet {
+  background: var(--color_violet_soft);
+}
+
+.topic_orange {
+  background: var(--color_orange_soft);
+}
+
+.support_body {
+  grid-template-columns: minmax(0, 1fr) var(--contact_column_width);
+  align-items: start;
+  gap: var(--space_11);
+  padding-inline: var(--document_gutter);
+}
+
+.help_articles {
+  min-width: 0;
+  flex-direction: column;
+  padding: var(--space_4) var(--space_12);
+  border: var(--border_width) solid var(--color_line);
+  border-radius: var(--radius_faq);
+  background: var(--color_surface);
+}
+
+.help_article + .help_article {
+  border-top: var(--border_width) solid var(--color_line);
+}
+
+.help_article summary {
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space_8);
+  min-height: var(--minimum_target_size);
+  padding-block: var(--space_10);
+  font-size: var(--font_document);
+  line-height: var(--leading_contents);
+  cursor: pointer;
+}
+
+.article_arrow {
+  color: var(--color_subtle);
+}
+
+.article_answer {
+  flex-direction: column;
+  gap: var(--space_8);
+  padding-bottom: var(--space_11);
+  color: var(--color_muted);
+  font-size: var(--font_body);
+  line-height: var(--leading_body);
+}
+
+.article_answer a,
+.reset_search {
+  color: var(--color_primary);
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.reset_search {
+  align-self: flex-start;
+  min-height: var(--minimum_target_size);
+  padding: var(--space_6) 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.no_results {
+  padding-block: var(--space_11);
+  color: var(--color_muted);
+  line-height: var(--leading_body);
+}
+
+.contact_card {
+  flex-direction: column;
+  gap: var(--space_8);
+  padding: var(--space_13);
+  border-radius: var(--radius_faq);
+  background: var(--color_text);
+  color: var(--color_surface);
+}
+
+.contact_card h2 {
+  font-size: var(--font_document_heading);
+  font-weight: var(--weight_semibold);
+  letter-spacing: var(--tracking_brand);
+}
+
+.contact_card p {
+  color: var(--color_dark_muted);
+  font-size: var(--font_body);
+  line-height: var(--leading_body);
+}
+
+.contact_button {
+  min-height: var(--minimum_target_size);
+  padding: var(--space_6) var(--space_8);
+  background: var(--color_surface);
+  color: var(--color_text);
+  font-size: var(--font_small);
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .help_topics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .support_body {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .help_topics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space_8);
+  }
+
+  .topic_card {
+    padding: var(--space_8);
+    border-radius: var(--radius_document);
+  }
+
+  .support_body {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .help_articles {
+    padding-inline: var(--space_11);
+  }
+
+  .contact_card {
+    padding: var(--space_11);
+  }
+}

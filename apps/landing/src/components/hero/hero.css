@@ -1,0 +1,117 @@
+/* Hero */
+
+.hero_section,
+.hero_contents,
+.hero_title,
+.hero_title_line,
+.student_faces,
+.hero_benefits,
+.hero_benefits li,
+.hero_cta {
+  display: flex;
+}
+
+.hero_section {
+  width: 100%;
+  max-width: var(--content_width);
+  align-self: center;
+  flex-direction: column;
+  gap: var(--space_17);
+  padding: var(--hero_top) var(--page_gutter) 0;
+}
+
+.hero_contents {
+  flex-direction: column;
+  gap: var(--space_12);
+  align-items: center;
+  text-align: center;
+}
+
+.hero_title {
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--font_hero);
+  line-height: var(--leading_hero);
+  letter-spacing: var(--tracking_hero);
+}
+
+.hero_title_line {
+  align-items: center;
+  gap: var(--space_9);
+}
+
+.student_faces {
+  align-items: center;
+  width: var(--face_group_width);
+  height: var(--face_group_height);
+  padding-inline: var(--space_2);
+  flex-shrink: 0;
+}
+
+.student_faces img {
+  width: var(--face_size);
+  height: var(--face_size);
+  border-radius: var(--radius_pill);
+  flex-shrink: 0;
+}
+
+.student_faces img + img {
+  margin-left: var(--face_overlap);
+}
+
+.hero_benefits {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space_12);
+  color: var(--color_muted);
+  font-weight: var(--weight_medium);
+}
+
+.hero_benefits li {
+  align-items: center;
+  gap: var(--space_4);
+}
+
+.hero_cta {
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space_6);
+}
+
+.hero_button {
+  padding: var(--space_9) var(--space_12);
+  font-size: var(--font_button);
+  box-shadow: var(--shadow_button);
+}
+
+.hero_cta p {
+  color: var(--color_subtle);
+  font-size: var(--font_small);
+  font-weight: var(--weight_medium);
+}
+
+.app_preview {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius_visual);
+}
+
+@media (max-width: 768px) {
+  .hero_title_line {
+    gap: var(--space_4);
+  }
+
+  .student_faces {
+    padding-inline: 0;
+  }
+
+  .hero_benefits {
+    flex-direction: column;
+    gap: var(--space_6);
+    font-size: var(--font_small);
+  }
+
+  .hero_section {
+    gap: var(--space_15);
+  }
+}

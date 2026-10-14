@@ -1,0 +1,70 @@
+---
+import './features.css';
+interface Feature {
+  image: string;
+  title: string;
+  description: string;
+  alt: string;
+}
+const features: readonly Feature[] = [
+  {
+    image: 'feature-focus.png',
+    title: 'Focus sessions',
+    description: 'Silence other apps until you end',
+    alt: 'Focus session with a study timer, chapter tasks, and silenced apps',
+  },
+  {
+    image: 'feature-pdf.png',
+    title: 'Read your PDFs',
+    description: 'Saved on your phone, read offline',
+    alt: 'Offline PDF reader displaying a lesson about Futures',
+  },
+  {
+    image: 'feature-audio.png',
+    title: 'Listen to lectures',
+    description: 'Speed control, pick up where you left',
+    alt: 'Audio lecture player with waveform and playback speed controls',
+  },
+  {
+    image: 'feature-reminders.png',
+    title: 'Never miss a deadline',
+    description: 'Reminders weeks or days ahead',
+    alt: 'Upcoming assignment, seminar, and exam reminders',
+  },
+  {
+    image: 'feature-partners.png',
+    title: 'Partners, both ways',
+    description: 'Hold each other to the plan',
+    alt: 'Partners screen showing people who hold you and people you hold',
+  },
+];
+---
+
+<!-- Features Section -->
+<section id="features" class="features_section" aria-labelledby="features_title">
+  <div class="section_heading" data-reveal>
+    <p class="eyebrow">Everything in one place</p>
+    <h2 id="features_title">Everything a study plan needs.</h2>
+    <p class="section_subheading">Nothing it doesn’t.</p>
+  </div>
+  <div class="feature_cards">
+    {features.map(({ image, title, description, alt }) => (
+      <figure class="feature_card" data-reveal>
+        <div class="feature_visual">
+          <img
+            src={`/images/${image}`}
+            width="336"
+            height="587"
+            alt={alt}
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <figcaption class="feature_caption">
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </figcaption>
+      </figure>
+    ))}
+  </div>
+</section>

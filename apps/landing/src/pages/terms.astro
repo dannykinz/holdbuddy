@@ -1,0 +1,12 @@
+---
+import DocumentLayout from '../layouts/DocumentLayout.astro';
+import PageHeader from '../components/page_header/PageHeader.astro';
+import LegalDocument from '../components/legal_document/LegalDocument.astro';
+import { termsOfService } from '../data/legal';
+import { siteConfig } from '../config/site';
+---
+
+<DocumentLayout title={termsOfService.title} description={termsOfService.description}>
+  <PageHeader label="Legal" title={termsOfService.title} updatedDate={siteConfig.updatedDate} />
+  <LegalDocument document={termsOfService} />
+</DocumentLayout>

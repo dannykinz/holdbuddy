@@ -1,0 +1,150 @@
+---
+import './delete_account.css';
+import { deletionEndpoint, supportEmail, siteConfig } from '../../config/site';
+
+const requestAvailable = Boolean(deletionEndpoint || supportEmail);
+const steps = [
+  'Open Holdbuddy and tap your profile photo',
+  'Go to Settings, then Edit profile',
+  'Choose Delete account and confirm',
+];
+const outcomes = [
+  {
+    title: 'What we delete',
+    icon: 'delete-bullet.svg',
+    items: [
+      'Your account, profile, and photo',
+      'Your plans, sessions, tasks, and reminders',
+      'Your partner connections and messages',
+    ],
+  },
+  {
+    title: 'What we may keep',
+    icon: 'muted-bullet.svg',
+    items: [
+      'Purchase records required by law or the app stores',
+      'Limited records needed to prevent fraud or resolve a dispute',
+    ],
+  },
+  {
+    title: 'How long it takes',
+    icon: 'primary-bullet.svg',
+    items: [
+      `After verifying your request, we aim to complete deletion within ${siteConfig.deletionDays} days. Local notes and files remain on your device until you remove them.`,
+    ],
+  },
+] as const;
+---
+
+<!-- Delete Account -->
+<div class="delete_account">
+  <section id="deletion_options" class="deletion_options" aria-label="Account deletion options">
+    <article class="deletion_card">
+      <h2>In the app</h2>
+      <ol class="deletion_steps">
+        {steps.map((step, index) => (
+          <li>
+            <span class="deletion_step_number" aria-hidden="true">
+              {index + 1}
+            </span>
+            <span>{step}</span>
+          </li>
+        ))}
+      </ol>
+    </article>
+    <article class="deletion_card">
+      <h2>Or request it here</h2>
+      {!requestAvailable && (
+        <p class="request_notice">
+          Online requests open at launch. You can delete your account in the app using the steps
+          alongside.
+        </p>
+      )}
+      <form
+        class="deletion_form"
+        data-deletion-form
+        data-endpoint={deletionEndpoint ?? ''}
+        data-contact-email={supportEmail ?? ''}
+        aria-describedby="deletion_status"
+      >
+        <label class="form_field" for="account_email">
+          <span>Email on your account</span>
+          <input
+            id="account_email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            placeholder="you@example.com"
+            maxlength="254"
+            required
+          />
+        </label>
+        <label class="form_field" for="deletion_reason">
+          <span>Why are you leaving? (optional)</span>
+          <textarea
+            id="deletion_reason"
+            name="reason"
+            placeholder="Tell us if you like"
+            maxlength="1000"
+            rows="2"
+          ></textarea>
+        </label>
+        <label class="confirmation_field" for="confirm_deletion">
+          <input id="confirm_deletion" name="confirmed" type="checkbox" value="yes" required />
+          <span>I understand that account deletion cannot be undone.</span>
+        </label>
+        <button class="button deletion_button" type="submit" disabled={!requestAvailable}>
+          Request deletion
+        </button>
+        <p id="deletion_status" class="deletion_status" role="status" aria-live="polite"></p>
+        {supportEmail && (
+          <a
+            class="request_email"
+            href={`mailto:${supportEmail}?subject=Holdbuddy%20account%20deletion`}
+          >
+            Prefer email? Contact {supportEmail}
+          </a>
+        )}
+        <noscript>
+          <p class="request_notice">
+            {supportEmail
+              ? 'Use the email link above to request deletion, or follow the in-app steps.'
+              : 'Follow the in-app steps to delete your account.'}
+          </p>
+        </noscript>
+      </form>
+    </article>
+  </section>
+  <section
+    id="deletion_details"
+    class="deletion_details"
+    aria-label="What happens when you delete your account"
+  >
+    {outcomes.map(({ title, icon, items }) => (
+      <article class="deletion_detail_card">
+        <h2>{title}</h2>
+        <ul>
+          {items.map((item) => (
+            <li>
+              <img
+                src={`/images/${icon}`}
+                width="6"
+                height="6"
+                alt="List item"
+                aria-hidden="true"
+              />
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </article>
+    ))}
+  </section>
+  <p class="deletion_note">
+    Export any notes you want to keep before deleting your account. Cancel active subscriptions in
+    Google Play or your Apple account separately.{' '}
+    <a href="/privacy/#retention_and_deletion">Read how we handle your data.</a>
+  </p>
+</div>
+
+<script src="./delete_account.js"></script>

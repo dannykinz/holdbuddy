@@ -1,0 +1,20 @@
+---
+import './document_layout.css';
+import Layout from './Layout.astro';
+import TheNavbar from '../components/navbar/TheNavbar.astro';
+import TheFooter from '../components/footer/TheFooter.astro';
+
+interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+---
+
+<Layout title={`${title} | Holdbuddy`} description={description}>
+  <TheNavbar />
+  <main id="main_content" class="document_main">
+    <slot />
+  </main>
+  <TheFooter compact />
+</Layout>

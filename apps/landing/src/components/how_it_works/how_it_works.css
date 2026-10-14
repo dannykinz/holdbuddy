@@ -1,0 +1,90 @@
+/* How It Works */
+
+.how_section,
+.step_card,
+.step_number {
+  display: flex;
+}
+
+.step_cards {
+  display: grid;
+}
+
+.how_section {
+  width: 100%;
+  max-width: var(--content_width);
+  align-self: center;
+  flex-direction: column;
+  gap: var(--section_content_gap);
+  padding-inline: var(--content_gutter);
+}
+
+.step_cards {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  grid-auto-rows: 1fr;
+  gap: var(--space_11);
+}
+
+.step_card {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space_8);
+  padding: var(--space_13);
+  border: var(--border_width) solid var(--color_line);
+  border-radius: var(--radius_card);
+  background: var(--color_surface);
+}
+
+.step_number {
+  align-items: center;
+  justify-content: center;
+  width: var(--step_number_size);
+  height: var(--step_number_size);
+  border-radius: var(--radius_tile);
+  font-size: var(--font_card);
+  font-weight: var(--weight_bold);
+}
+
+.number_sky {
+  background: var(--color_sky_soft);
+  color: var(--color_sky);
+}
+
+.number_pink {
+  background: var(--color_pink_soft);
+  color: var(--color_pink);
+}
+
+.number_green {
+  background: var(--color_green_soft);
+  color: var(--color_green);
+}
+
+.step_card h3 {
+  font-size: var(--font_card);
+  line-height: var(--leading_card);
+  letter-spacing: var(--tracking_card);
+}
+
+.step_card p {
+  color: var(--color_muted);
+  line-height: var(--leading_body);
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .step_card {
+    padding: var(--space_11);
+  }
+}
+
+@media (max-width: 768px) {
+  .step_cards {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space_8);
+  }
+
+  .step_card {
+    padding: var(--space_11);
+  }
+}

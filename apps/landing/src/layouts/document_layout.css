@@ -1,0 +1,14 @@
+/* Document Layout */
+
+.document_main {
+  display: flex;
+}
+
+.document_main {
+  width: 100%;
+  max-width: var(--content_width);
+  align-self: center;
+  flex-direction: column;
+  gap: var(--document_header_gap);
+  padding-bottom: var(--space_21);
+}

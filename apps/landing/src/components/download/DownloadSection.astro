@@ -1,0 +1,37 @@
+---
+import './download.css';
+import { appLinks } from '../../data/landing';
+const stores = [
+  { label: 'GET IT ON', name: 'Google Play', href: appLinks.googlePlay },
+  { label: 'DOWNLOAD ON THE', name: 'App Store', href: appLinks.appStore },
+] as const;
+---
+
+<!-- Download Section -->
+<section id="get_the_app" class="download_section" aria-labelledby="download_title">
+  <div class="download_band" data-reveal>
+    <div class="download_contents">
+      <h2 id="download_title">
+        Your next chapter<span>starts tonight.</span>
+      </h2>
+      <p>Free on Android and iPhone.</p>
+      <div class="store_links">
+        {stores.map(({ label, name, href }) => (
+          <a class="store_button" href={href} aria-label={`Download Holdbuddy on ${name}`}>
+            <span>{label}</span>
+            <strong>{name}</strong>
+          </a>
+        ))}
+      </div>
+    </div>
+    <img
+      class="dark_app_preview"
+      src="/images/app-dark-preview.png"
+      width="320"
+      height="440"
+      alt="Holdbuddy in dark mode showing tonight's study session, study days, and chapter tasks"
+      loading="lazy"
+      decoding="async"
+    />
+  </div>
+</section>

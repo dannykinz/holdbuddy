@@ -1,0 +1,94 @@
+---
+import './support_center.css';
+import PageHeader from '../page_header/PageHeader.astro';
+import { supportTopics, helpArticles } from '../../data/support';
+import { supportEmail } from '../../config/site';
+---
+
+<!-- Support Center -->
+<div class="support_center" data-support-center>
+  <PageHeader label="Support" title="How can we help?">
+    <label class="search_field" for="help_search">
+      <span class="visually_hidden">Search help articles</span>
+      <input
+        id="help_search"
+        type="search"
+        placeholder="Search help articles"
+        maxlength="200"
+        data-help-search
+      />
+    </label>
+  </PageHeader>
+  <section id="help_topics" class="help_topics" aria-label="Browse help topics">
+    {supportTopics.map(({ id, title, description, tone }) => (
+      <button
+        type="button"
+        class:list={['topic_card', `topic_${tone}`]}
+        data-help-topic={id}
+        aria-pressed="false"
+        aria-controls="help_articles"
+      >
+        <strong>{title}</strong>
+        <span>{description}</span>
+      </button>
+    ))}
+  </section>
+  <div class="support_body">
+    <section id="help_articles" class="help_articles" aria-label="Help articles">
+      <p
+        class="search_status visually_hidden"
+        role="status"
+        aria-live="polite"
+        data-search-status
+      ></p>
+      <button class="reset_search" type="button" data-reset-search hidden>
+        Show all articles
+      </button>
+      <p class="no_results" data-no-results hidden>
+        No matching articles. Try another search or show all articles.
+      </p>
+      {helpArticles.map(({ id, topic, title, paragraphs, link }) => (
+        <details id={id} class="help_article" data-help-article data-topic={topic}>
+          <summary>
+            <span>{title}</span>
+            <span class="article_arrow" aria-hidden="true">
+              →
+            </span>
+          </summary>
+          <div class="article_answer">
+            {paragraphs.map((paragraph) => (
+              <p>{paragraph}</p>
+            ))}
+            {link && <a href={link.href}>{link.label}</a>}
+          </div>
+        </details>
+      ))}
+    </section>
+    <section id="contact" class="contact_card" aria-labelledby="contact_title">
+      <h2 id="contact_title">Still stuck?</h2>
+      {supportEmail ? (
+        <>
+          <p>
+            Email us with your account email, device type, and a short description. A person will
+            help you get back to studying.
+          </p>
+          <a class="button contact_button" href={`mailto:${supportEmail}`}>
+            {supportEmail}
+          </a>
+        </>
+      ) : (
+        <>
+          <p>
+            Direct email support opens at launch. Explore the guides for help with your plan, files,
+            and account.
+          </p>
+          <button class="button contact_button" type="button" disabled>
+            Email support · coming soon
+          </button>
+        </>
+      )}
+    </section>
+  </div>
+</div>
+
+<script src="./support_center.js"></script>

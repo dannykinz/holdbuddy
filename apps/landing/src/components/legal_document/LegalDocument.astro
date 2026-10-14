@@ -1,0 +1,59 @@
+---
+import './legal_document.css';
+import type { LegalDocument } from '../../data/legal';
+
+interface Props {
+  document: LegalDocument;
+}
+const { document } = Astro.props;
+---
+
+<!-- Legal Document -->
+<div class="legal_document">
+  <nav class="legal_contents" aria-label="On this page">
+    <h2>On this page</h2>
+    <ol>
+      {document.sections.map(({ id, title }, index) => (
+        <li>
+          <a href={`#${id}`}>
+            {index + 1}. {title}
+          </a>
+        </li>
+      ))}
+    </ol>
+  </nav>
+  <article class="legal_article" aria-label={document.title}>
+    <p class="legal_intro">{document.intro}</p>
+    {document.sections.map(({ id, title, paragraphs, items, link }, index) => (
+      <section id={id} class="legal_section" aria-labelledby={`${id}_title`}>
+        <h2 id={`${id}_title`}>
+          {index + 1}. {title}
+        </h2>
+        {items && (
+          <ul>
+            {items.map((item) => (
+              <li>
+                <img
+                  src="/images/legal-bullet.svg"
+                  width="6"
+                  height="6"
+                  alt="List item"
+                  aria-hidden="true"
+                />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+        {paragraphs?.map((paragraph) => (
+          <p>{paragraph}</p>
+        ))}
+        {link && (
+          <a class="legal_link" href={link.href}>
+            {link.label}
+          </a>
+        )}
+      </section>
+    ))}
+  </article>
+</div>

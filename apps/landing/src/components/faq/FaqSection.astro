@@ -1,0 +1,71 @@
+---
+import './faq.css';
+interface Question {
+  question: string;
+  answer: string;
+  link?: { label: string; href: string };
+}
+const questions: readonly Question[] = [
+  {
+    question: 'Does my witness need the app?',
+    answer:
+      'No. They get a link by text or WhatsApp and can follow your plan in a browser. If they install Holdbuddy, you can hold each other.',
+  },
+  {
+    question: 'What happens if I miss a session?',
+    answer:
+      'Your plan moves your finish date. Your witness gets the message you wrote at setup. Nothing turns red and nothing resets.',
+  },
+  {
+    question: 'Where are my notes and files?',
+    answer:
+      'On your phone. PDFs, documents and audio stay exactly where you keep them; Holdbuddy just opens them. Notes stay on the device, and you can export a backup file whenever you like.',
+  },
+  {
+    question: 'Can I hold a friend accountable too?',
+    answer:
+      'Yes. Anyone can be a learner and a witness at the same time. Partners shows who holds you and who you hold.',
+  },
+  {
+    question: 'Is it really free?',
+    answer:
+      'Every feature is free. Ads show outside study time, never in a session. Pro removes them and adds monthly reports and themes.',
+  },
+  {
+    question: 'How do I delete my account?',
+    answer:
+      'In the app, open your profile, go to Settings, then Edit profile, and choose Delete account. Our account page explains your options and what happens to your data.',
+    link: { label: 'See account deletion options', href: '/delete-account/' },
+  },
+];
+---
+
+<!-- FAQ Section -->
+<section id="faq" class="faq_section" aria-labelledby="faq_title">
+  <div class="section_heading" data-reveal>
+    <p class="eyebrow">FAQ</p>
+    <h2 id="faq_title">Questions, answered.</h2>
+  </div>
+  <div class="faq_cards">
+    {questions.map(({ question, answer, link }) => (
+      <details class="faq_card" open data-reveal>
+        <summary class="faq_summary">
+          <h3>{question}</h3>
+          <img
+            src="/images/plus.svg"
+            alt="Toggle answer"
+            width="20"
+            height="20"
+            aria-hidden="true"
+          />
+        </summary>
+        <p>{answer}</p>
+        {link && (
+          <a class="faq_link" href={link.href}>
+            {link.label}
+          </a>
+        )}
+      </details>
+    ))}
+  </div>
+</section>

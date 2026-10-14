@@ -1,0 +1,117 @@
+/* Features */
+
+.features_section,
+.feature_caption {
+  display: flex;
+}
+
+.feature_cards {
+  display: grid;
+}
+
+.features_section {
+  width: 100%;
+  max-width: var(--content_width);
+  align-self: center;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space_17);
+  padding-inline: var(--page_gutter);
+}
+
+.feature_cards {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) minmax(0, var(--feature_audio_track)) repeat(
+      2,
+      minmax(0, 1fr)
+    );
+  gap: var(--space_12);
+  width: 100%;
+  max-width: var(--feature_grid_width);
+}
+
+.feature_card {
+  min-width: 0;
+  text-align: center;
+}
+
+.feature_visual {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius_phone);
+  box-shadow: var(--shadow_phone);
+  aspect-ratio: var(--feature_ratio);
+  width: var(--feature_width);
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+.feature_visual img {
+  position: absolute;
+  width: var(--feature_image_scale);
+  height: auto;
+  max-width: none;
+  top: var(--feature_image_top);
+  left: var(--feature_image_left);
+}
+
+.feature_caption {
+  position: relative;
+  flex-direction: column;
+  gap: var(--space_4);
+  align-items: center;
+  padding-top: var(--space_9);
+}
+
+.feature_caption h3 {
+  font-size: var(--font_body);
+}
+
+.feature_caption p {
+  color: var(--color_subtle);
+  font-size: var(--font_small);
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .feature_cards {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    row-gap: var(--space_16);
+  }
+
+  .feature_card {
+    grid-column: span 2;
+  }
+
+  .feature_card:nth-child(4) {
+    grid-column: 2 / span 2;
+  }
+
+  .feature_card:nth-child(5) {
+    grid-column: 4 / span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .features_section {
+    gap: var(--space_15);
+  }
+
+  .feature_cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space_15) var(--space_8);
+  }
+
+  .feature_card:last-child {
+    grid-column: 1 / -1;
+    width: calc((100% - var(--space_8)) / 2);
+    justify-self: center;
+  }
+
+  .feature_caption h3 {
+    font-size: var(--font_small);
+  }
+
+  .feature_caption p {
+    font-size: var(--font_eyebrow);
+    line-height: var(--leading_body);
+  }
+}

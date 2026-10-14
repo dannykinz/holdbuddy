@@ -1,0 +1,58 @@
+/* Shared */
+
+.button,
+.section_heading {
+  display: flex;
+}
+
+.button {
+  justify-content: center;
+  align-items: center;
+  gap: var(--space_5);
+  border: var(--border_width) solid transparent;
+  border-radius: var(--radius_pill);
+  background: var(--color_text);
+  color: var(--color_surface);
+  font-weight: var(--weight_semibold);
+  transition: transform var(--motion_duration) var(--motion_easing);
+}
+
+.button:hover:not(:disabled) {
+  transform: translateY(var(--hover_distance));
+}
+
+.eyebrow {
+  align-self: center;
+  padding: var(--space_3) var(--space_6);
+  border: var(--border_width) solid var(--color_line);
+  border-radius: var(--radius_pill);
+  background: var(--color_surface);
+  color: var(--color_muted);
+  font-size: var(--font_eyebrow);
+  font-weight: var(--weight_semibold);
+}
+
+.section_heading {
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space_9);
+  text-align: center;
+}
+
+.section_subheading {
+  color: var(--color_subtle);
+  font-size: var(--font_heading);
+  font-weight: var(--weight_bold);
+  line-height: var(--leading_normal);
+  letter-spacing: var(--tracking_heading);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+
+  .button:hover:not(:disabled) {
+    transform: none;
+  }
+}

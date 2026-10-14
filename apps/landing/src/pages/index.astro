@@ -1,0 +1,28 @@
+---
+import '../styles/landing.css';
+import { siteConfig } from '../config/site';
+import Layout from '../layouts/Layout.astro';
+import TheNavbar from '../components/navbar/TheNavbar.astro';
+import HeroSection from '../components/hero/HeroSection.astro';
+import ComebackSection from '../components/comeback/ComebackSection.astro';
+import FeaturesSection from '../components/features/FeaturesSection.astro';
+import HowItWorksSection from '../components/how_it_works/HowItWorksSection.astro';
+import PricingSection from '../components/pricing/PricingSection.astro';
+import FaqSection from '../components/faq/FaqSection.astro';
+import DownloadSection from '../components/download/DownloadSection.astro';
+import TheFooter from '../components/footer/TheFooter.astro';
+---
+
+<Layout>
+  <TheNavbar />
+  <main id="main_content" class="main_wrapper">
+    <HeroSection />
+    <ComebackSection />
+    <FeaturesSection />
+    <HowItWorksSection />
+    {siteConfig.showPricing && <PricingSection />}
+    <FaqSection />
+    <DownloadSection />
+  </main>
+  <TheFooter />
+</Layout>

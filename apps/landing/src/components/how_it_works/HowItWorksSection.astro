@@ -1,0 +1,46 @@
+---
+import './how_it_works.css';
+interface Step {
+  title: string;
+  description: string;
+  color: string;
+}
+const steps: readonly Step[] = [
+  {
+    title: 'Set your study plan',
+    description:
+      'Pick the course, your days and your finish date. It locks in before the motivation runs out.',
+    color: 'sky',
+  },
+  {
+    title: 'Name one person',
+    description: 'A friend, a sibling, your mum. They never need the app. A text is enough.',
+    color: 'pink',
+  },
+  {
+    title: 'Miss a day, come back',
+    description:
+      'Your plan recalculates. Your witness gets the message you wrote. You pick up the next chapter.',
+    color: 'green',
+  },
+];
+---
+
+<!-- How It Works Section -->
+<section id="how_it_works" class="how_section" aria-labelledby="how_title">
+  <div class="section_heading" data-reveal>
+    <p class="eyebrow">How it works</p>
+    <h2 id="how_title">Three minutes to set up.</h2>
+  </div>
+  <ol class="step_cards">
+    {steps.map(({ title, description, color }, index) => (
+      <li class="step_card" data-reveal>
+        <span class:list={['step_number', `number_${color}`]} aria-hidden="true">
+          {index + 1}
+        </span>
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </li>
+    ))}
+  </ol>
+</section>

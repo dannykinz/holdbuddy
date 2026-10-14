@@ -1,0 +1,30 @@
+/* Brand */
+
+.brand,
+.brand_symbol {
+  display: flex;
+}
+
+.brand {
+  align-items: center;
+  gap: var(--space_5);
+  font-size: var(--font_brand);
+  font-weight: var(--weight_bold);
+  letter-spacing: var(--tracking_brand);
+}
+
+.brand_symbol {
+  width: var(--brand_size);
+  height: var(--brand_size);
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius_brand);
+  background: var(--color_primary);
+}
+
+@media (max-width: 768px) {
+  .brand {
+    font-size: var(--font_lead);
+    gap: var(--space_4);
+  }
+}
