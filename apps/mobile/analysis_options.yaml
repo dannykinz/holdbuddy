@@ -1,0 +1,49 @@
+analyzer:
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+  exclude:
+    - build/**
+    - lib/core/l10n/generated/**
+    - '**/*.g.dart'
+    - '**/*.freezed.dart'
+    - android/**
+    - ios/**
+  errors:
+    dead_code: error
+    unused_import: error
+    unused_local_variable: error
+
+linter:
+  rules:
+    - always_declare_return_types
+    - annotate_overrides
+    - avoid_dynamic_calls
+    - avoid_empty_else
+    - avoid_print
+    - avoid_redundant_argument_values
+    - cancel_subscriptions
+    - close_sinks
+    - collection_methods_unrelated_type
+    - depend_on_referenced_packages
+    - directives_ordering
+    - discarded_futures
+    - empty_catches
+    - exhaustive_cases
+    - no_duplicate_case_values
+    - no_logic_in_create_state
+    - prefer_const_constructors
+    - prefer_const_declarations
+    - prefer_const_literals_to_create_immutables
+    - prefer_final_fields
+    - prefer_final_locals
+    - prefer_single_quotes
+    - sized_box_for_whitespace
+    - test_types_in_equals
+    - throw_in_finally
+    - unawaited_futures
+    - unnecessary_lambdas
+    - unnecessary_null_checks
+    - use_build_context_synchronously
+    - use_key_in_widget_constructors

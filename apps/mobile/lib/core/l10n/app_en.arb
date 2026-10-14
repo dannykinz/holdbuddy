@@ -1,0 +1,1998 @@
+{
+  "@@locale": "en",
+  "appTitle": "Holdbuddy",
+  "@appTitle": {
+    "description": "Application name."
+  },
+  "tabToday": "Today",
+  "tabPlan": "Plan",
+  "tabNotes": "Notes",
+  "tabSettings": "Settings",
+  "navigationError": "This page could not be opened. Let’s get you back to Today.",
+  "navigationReturn": "Go to Today",
+  "navigationHeading": "A small detour.",
+  "loading": "Loading",
+  "create": "Create",
+  "dayDone": "Done",
+  "dayMissed": "Missed",
+  "dayRest": "Rest day",
+  "dayToday": "Today",
+  "dayPlanned": "Planned",
+  "calendarDay": "{date}, {status}",
+  "@calendarDay": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "contractStep": "Step {step} of {total}",
+  "@contractStep": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "avatarUnavailable": "Photo unavailable",
+  "tryAgain": "Try again",
+  "loadErrorHeading": "This couldn’t be opened.",
+  "loadErrorDescription": "Try opening it again.",
+  "emptyNotesHeading": "A place for what clicks.",
+  "emptyNotesDescription": "Notes you write during a session will appear here.",
+  "emptyNotesPrivacy": "They stay on this phone. Your witness cannot read them.",
+  "continueAction": "Continue",
+  "verificationCode": "Verification code",
+  "planNameLabel": "What are you learning?",
+  "week": "Week",
+  "month": "Month",
+  "allTime": "All time",
+  "validationRequired": "Enter a plan name.",
+  "brandName": "holdbuddy",
+  "back": "Back",
+  "skip": "Skip",
+  "letsBegin": "Let’s begin",
+  "onboardingContractBefore": "A little structure.\nA real ",
+  "onboardingContractAccent": "finish line",
+  "onboardingContractBody": "Turn what you want to learn into a plan you can actually keep.",
+  "onboardingWitnessBefore": "Someone who\nknows ",
+  "onboardingWitnessAccent": "your plan",
+  "onboardingWitnessBody": "Invite one person to be your witness. They can check in without another app.",
+  "onboardingReturnBefore": "Missed a day?\nThere’s a ",
+  "onboardingReturnAccent": "way back",
+  "onboardingReturnBody": "Move a session, adjust the plan, or pick up where you left off.",
+  "headlinePeriod": ".",
+  "getStartedBefore": "Your next ",
+  "getStartedAccent": "chapter",
+  "getStartedAfter": "\nstarts here.",
+  "getStartedBody": "Your notes never leave this phone.",
+  "continueGoogle": "Continue with Google",
+  "continueEmail": "Continue with email",
+  "continueOffline": "Continue offline",
+  "existingAccount": "Already have an account? ",
+  "signIn": "Sign in",
+  "progress": "Progress",
+  "tonight": "Tonight",
+  "previewStartsIn": "Starts in 3h 12m",
+  "tasksLabel": "TASKS",
+  "noteLabel": "NOTE",
+  "writeOne": "Write one",
+  "startSession": "Start session",
+  "newFinishDate": "NEW FINISH DATE",
+  "previously": "Previously ",
+  "planRecalculated": "Plan recalculated",
+  "previewOnPace": "{planName} · on pace",
+  "previewChapters": "/ {count} chapters",
+  "previewStudied": "{hours}h studied",
+  "previewNotes": "{count} notes",
+  "previewTasks": "{done} of {total} done",
+  "previewChapterSummary": "Chapter 7 of 24 · {planName} · 45 min",
+  "@previewOnPace": {
+    "placeholders": {
+      "planName": {
+        "type": "String"
+      }
+    }
+  },
+  "@previewChapters": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@previewStudied": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "@previewNotes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@previewTasks": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@previewChapterSummary": {
+    "placeholders": {
+      "planName": {
+        "type": "String"
+      }
+    }
+  },
+  "authPreview": "Account preview. Nothing is sent.",
+  "authAdult": "I’m 18 or older",
+  "authOr": "or",
+  "authName": "Your name",
+  "authEmail": "Email",
+  "authPassword": "Password",
+  "authNewPassword": "New password",
+  "authConfirmPassword": "Confirm password",
+  "authNameError": "Enter your name, using up to 80 characters.",
+  "authEmailError": "Enter a complete email address.",
+  "authPasswordHint": "Use at least 12 characters.",
+  "authPasswordError": "Enter your password, using up to 128 characters.",
+  "authPasswordMismatch": "Both passwords need to match.",
+  "authShowPassword": "Show password",
+  "authHidePassword": "Hide password",
+  "authCreateBefore": "Create your ",
+  "authCreateAccent": "account",
+  "authWelcomeBefore": "Welcome ",
+  "authWelcomeAccent": "back",
+  "authHeadlineAfter": ".",
+  "authCreateAccount": "Create account",
+  "authTerms": "By continuing you agree to the Terms and Privacy Notice.",
+  "authValidationTitle": "A couple of\nthings to fix.",
+  "authTryAgainTitle": "Try that again.",
+  "authSignInFailure": "We couldn’t sign you in",
+  "authSignInFailureBody": "Check your email and password, then try again.",
+  "authForgot": "Forgot password?",
+  "authResetMine": "Reset my password",
+  "authTrySignIn": "Try signing in again",
+  "authCheckEmail": "Check your email.",
+  "authEmailDestination": "your email address",
+  "authVerifyBody": "Enter the 6-digit code sent to {email}.",
+  "authExpiredBody": "We sent your code to {email}.",
+  "authCode": "Verification code",
+  "authCodeError": "Enter all 6 digits to continue.",
+  "authResendCode": "Resend code",
+  "authVerify": "Verify email",
+  "authExpiredTitle": "That code\nhas expired.",
+  "authExpiredHint": "Request a new code to continue.",
+  "authNewCode": "Send a new code",
+  "authCodeResent": "New code requested in this preview.",
+  "authRecoveryTitle": "Let’s get you back in.",
+  "authRecoveryBody": "Enter your email and we’ll send a password reset link.",
+  "authFreshPassword": "A fresh password.",
+  "authSendReset": "Send reset link",
+  "authSavePassword": "Save new password",
+  "authResetSentBody": "If an account exists for {email}, you’ll receive a password reset link.",
+  "authResetExpiry": "The link expires in 30 minutes. Check your spam folder if you don’t see it.",
+  "authBackSignIn": "Back to sign in",
+  "authResendReset": "Resend reset link",
+  "authResetResent": "Reset link requested in this preview.",
+  "authPasswordSaved": "Password updated.",
+  "authPasswordSavedBody": "You can sign in with your new password.",
+  "authLoadingTitle": "A moment,\nwhile we connect.",
+  "authLoadingBody": "We’re checking your account. Your entries are saved.",
+  "authSigningIn": "Signing in…",
+  "authGoogleTitle": "Choose your\nGoogle account.",
+  "authGoogleBody": "Continue in the secure Google window. Holdbuddy won’t ask for your Google password.",
+  "authPrivateTitle": "Your notes stay private",
+  "authPrivateBody": "Google sign-in does not upload your learning notes.",
+  "authGoogleCancelledTitle": "Sign-in wasn’t\ncompleted.",
+  "authGoogleCancelledBody": "No changes were made. Try Google again or continue with email.",
+  "authOpenGoogle": "Open Google",
+  "authRetryGoogle": "Try Google again",
+  "authUseEmail": "Use email instead",
+  "authOfflineTitle": "You’re offline.",
+  "authOfflineBody": "Account access needs a connection. Your saved plan, sessions, and notes are still available.",
+  "authTryAgain": "Try again",
+  "authSignOutTitle": "Your work\nstays here.",
+  "authSignOutBody": "Signing out keeps your plan and private notes on this phone.",
+  "authSharedPhoneTitle": "Using a shared phone?",
+  "authSharedPhoneBody": "Remove your local data separately in Privacy & local data.",
+  "authSignOut": "Sign out",
+  "authStaySignedIn": "Stay signed in",
+  "authUnavailableTitle": "Account access is unavailable",
+  "authUnavailableBody": "Your entries are still here. Try again, or continue offline.",
+  "@authVerifyBody": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "@authExpiredBody": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "@authResetSentBody": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "authPasswordLengthError": "Use no more than 128 characters.",
+  "contractLater": "Later",
+  "contractScopeStep": "01 / 04 · Your scope",
+  "contractScopeInvalid": "Give your plan\na clear scope.",
+  "contractScopeBefore": "What are you\nhere to ",
+  "contractScopeAccent": "finish",
+  "contractScopeAfter": "?",
+  "contractScopeBody": "Bring the material. We’ll help you keep showing up.",
+  "contractLearning": "What are you learning?",
+  "contractTotalUnits": "Total units",
+  "contractTotalChapters": "Total chapters",
+  "contractUnitName": "Unit name",
+  "contractMaterialOptional": "Course material (optional)",
+  "contractSetRhythm": "Set my rhythm",
+  "contractNameError": "Add a name for what you’re learning.",
+  "contractWholeNumberError": "Enter a whole number greater than zero.",
+  "contractUnitError": "Add a name for each unit.",
+  "contractRhythmTitle": "Make room\nfor the work.",
+  "contractRhythmBody": "Choose a pace that fits your actual week.",
+  "contractStudyDays": "Study days",
+  "contractStartTime": "Start time",
+  "contractSessionLength": "Session length",
+  "contractMinutesShort": "minutes",
+  "contractChooseConsequence": "Choose my consequence",
+  "contractConsequenceTitle": "Write it in\nyour own words.",
+  "contractConsequenceBody": "If you let a session go, your witness gets this message.",
+  "contractYourMessage": "Your message",
+  "contractControlTitle": "You stay in control",
+  "contractControlBody": "You can do a missed session now, move it, or let it go.",
+  "contractChooseWitness": "Choose my witness",
+  "contractWitnessTitle": "One person.\nIn your corner.",
+  "contractWitnessBody": "They can see your plan and check in. No app or account needed.",
+  "contractTheirName": "Their name",
+  "contractTheirContact": "Email or phone",
+  "contractWitnessNotice": "No daily notifications",
+  "contractWitnessNoticeBody": "They receive your invitation and the consequence you choose.",
+  "contractReview": "Review my contract",
+  "contractWithoutWitness": "Continue without a witness",
+  "contractContactError": "Enter a complete email address or phone number.",
+  "contractPromiseBefore": "A promise\nyou can ",
+  "contractPromiseAccent": "keep",
+  "contractRenegotiate": "You can renegotiate this plan when life changes.",
+  "contractHold": "Hold to commit · 2 seconds",
+  "contractHolding": "Keep holding…",
+  "contractYourContract": "Your learning contract",
+  "contractNoWitness": "No witness yet",
+  "contractNoWitnessBody": "Your consequence is saved. Invite a witness later when you’re ready.",
+  "materialAdd": "Add your material",
+  "materialStaysOnPhone": "Stays on your phone",
+  "materialAddAnother": "Add another",
+  "materialRemove": "Remove material",
+  "materialLinkExtent": "Link · on this phone",
+  "materialPasteLink": "Paste a link",
+  "materialLinkBody": "A course page, video or playlist",
+  "materialLinkPdf": "Link a PDF",
+  "materialPdfBody": "Read it here, page by page",
+  "materialLinkDocument": "Link a document",
+  "materialDocumentBody": "Word files, opened in the reader",
+  "materialLinkAudio": "Link audio",
+  "materialAudioBody": "Lectures and recordings, with speed control",
+  "materialPrivacy": "Files stay where they are. Nothing is uploaded.",
+  "materialPreviewAdded": "Sample material added for this preview. No file is linked.",
+  "contractUnitsPerSession": "{units} per session",
+  "@contractUnitsPerSession": {
+    "placeholders": {
+      "units": {
+        "type": "String"
+      }
+    }
+  },
+  "contractFinishOn": "Finish on {date}",
+  "@contractFinishOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "contractSchedulePreview": "{count} sessions a week · starts {date}",
+  "@contractSchedulePreview": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "contractScopeSummary": "{total} {units} · {perSession} per session",
+  "@contractScopeSummary": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      },
+      "units": {
+        "type": "String"
+      },
+      "perSession": {
+        "type": "int"
+      }
+    }
+  },
+  "contractRhythmSummary": "{days} · {time}",
+  "@contractRhythmSummary": {
+    "placeholders": {
+      "days": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "contractFinishSummary": "{minutes} minutes · finish {date}",
+  "@contractFinishSummary": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "contractWitnessSummary": "Witness · {name}",
+  "@contractWitnessSummary": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "contractMessageQuote": "“{message}”",
+  "@contractMessageQuote": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "materialPageExtent": "{count} pages · on this phone",
+  "@materialPageExtent": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "materialAudioExtent": "{count} minutes · on this phone",
+  "@materialAudioExtent": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todayAlerts": "Alerts",
+  "todayProfile": "Edit profile",
+  "todayPartners": "Partners",
+  "todayRecentNotes": "Recent notes",
+  "todaySeeAll": "See all",
+  "todayComebacks": "{count} comebacks",
+  "@todayComebacks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todayDue": "Due {date}",
+  "@todayDue": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "todayDaysAway": "in {count} days",
+  "@todayDaysAway": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todayRequests": "{count, plural, one{1 request} other{{count} requests}}",
+  "@todayRequests": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todayPartnerActivity": "{name} studied {minutes} min tonight",
+  "@todayPartnerActivity": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "noteChapter": "Ch {number} · {name}",
+  "@noteChapter": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "todayChapterOf": "Chapter {number} of {total}",
+  "@todayChapterOf": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "todayFirstBefore": "The ",
+  "todayFirstAccent": "first step",
+  "todayFirstSchedule": "8:00 pm · 45 minutes",
+  "todayStartFirst": "Start first session",
+  "todayFinishUnits": "Your finish date · {total} chapters",
+  "@todayFinishUnits": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "todayInvitePreview": "Your invitation preview is ready",
+  "todayInviteBody": "{name} can accept without creating an account. Nothing is sent in this preview.",
+  "@todayInviteBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "todayEmptyBefore": "One thing\nyou want to ",
+  "todayEmptyAccent": "finish",
+  "todayEmptyBody": "Give it a scope, a rhythm, and a witness.",
+  "todayCreatePlan": "Create a plan",
+  "todayRestTitle": "Nothing scheduled\ntoday.",
+  "todayRestBody": "Your next session is ready when you are.",
+  "todaySeePlan": "See my plan",
+  "todayOfflineTitle": "You’re offline",
+  "todayOfflineBody": "Sessions and notes still work. Witness updates will send when you reconnect.",
+  "todayNextBefore": "Your ",
+  "todayNextAccent": "next",
+  "todayNextAfter": " session.",
+  "todayOfflineSession": "Chapter 7 · 8:00 pm · 45 minutes",
+  "todayOfflineMaterial": "Online material may be unavailable. Open a downloaded copy if you have one.",
+  "todayDoneBefore": "That’s today\n",
+  "todayDoneAccent": "taken care of",
+  "todayDoneBody": "Told only if you skip.",
+  "todayReadNote": "Read today’s note",
+  "todayLoadingTitle": "Opening your plan.",
+  "todayLoadingBody": "Your saved work is on this phone.",
+  "sessionTimeRemaining": "Time remaining",
+  "sessionElapsed": "{minutes}:{seconds} elapsed · 45 min session",
+  "@sessionElapsed": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "seconds": {
+        "type": "String"
+      }
+    }
+  },
+  "sessionNext": "Next: {chapter}",
+  "@sessionNext": {
+    "placeholders": {
+      "chapter": {
+        "type": "String"
+      }
+    }
+  },
+  "sessionChapterPlan": "Chapter {chapter} · {plan}",
+  "@sessionChapterPlan": {
+    "placeholders": {
+      "chapter": {
+        "type": "int"
+      },
+      "plan": {
+        "type": "String"
+      }
+    }
+  },
+  "sessionEnd": "End session",
+  "sessionPause": "Pause",
+  "sessionOpenMaterial": "Open material",
+  "sessionYourNotes": "Your notes",
+  "sessionYourNote": "Your note",
+  "sessionNoteHint": "What do you want to remember?",
+  "sessionNotesPrivacy": "Only you can read these. Your witness cannot.",
+  "sessionPausedTitle": "Take a moment.",
+  "sessionPausedBody": "Your timer is paused. Your note is saved here.",
+  "sessionStudied": "{minutes} min {seconds} sec studied",
+  "@sessionStudied": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "sessionResume": "Resume session",
+  "sessionLeaveTitle": "Keep your place.",
+  "sessionLeaveBody": "Your timer will pause. Your notes stay on this phone.",
+  "sessionSaveLeave": "Save and leave",
+  "sessionKeepStudying": "Keep studying",
+  "sessionSavedTitle": "Session saved.",
+  "sessionSavedBody": "Mark what you covered. The plan follows your pace.",
+  "sessionReceiptPrivacy": "Your note is saved on this phone. {name} can see that this session happened, never your note.",
+  "@sessionReceiptPrivacy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "sessionDone": "Done",
+  "sessionChaptersCovered": "Chapters covered",
+  "sessionFewerChapters": "Cover fewer chapters",
+  "sessionMoreChapters": "Cover more chapters",
+  "sessionFirstSavedTitle": "Your first session\nis saved.",
+  "sessionFirstCovered": "1 chapter covered. 23 to go.",
+  "sessionUnderway": "Your plan is under way",
+  "sessionStillFinishing": "Your finish date is still {date}.",
+  "@sessionStillFinishing": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "sessionBackPlan": "Back to my plan",
+  "sessionNoUnitsTitle": "Time still counts.",
+  "sessionNoUnitsBody": "No chapters covered. Your note and {minutes} min {seconds} sec are saved.",
+  "@sessionNoUnitsBody": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "sessionFinishUpdated": "Finish date updated",
+  "sessionNoUnitsFinish": "Your next chapter stays on the plan. Your finish date is now {date}.",
+  "@sessionNoUnitsFinish": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "sessionSaveContinue": "Save and continue",
+  "sessionYourMaterial": "Your material",
+  "sessionMaterialPage": "{name} · page 12",
+  "@sessionMaterialPage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "sessionSchedule": "Wed, 21 Oct · 8:00 pm · 45 min",
+  "sessionChooseTitle": "How do you want to work?",
+  "sessionStudyMode": "Study mode",
+  "sessionStudyModeBody": "Your material opens with the timer",
+  "sessionTaskMode": "Task mode",
+  "sessionTaskModeBody": "Your checklist stays on screen",
+  "sessionSilence": "Silence other apps",
+  "sessionSilenceBody": "Until you end the session",
+  "missedTitle": "This session\ndidn’t happen.",
+  "missedBody": "Chapter 7 · 8:00 pm. Choose what happens next.",
+  "missedSessionSummary": "{name} · 45 minutes",
+  "@missedSessionSummary": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "missedMessageLabel": "If you let it go, {name} receives",
+  "@missedMessageLabel": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "missedDoNow": "Do it now",
+  "missedMove": "Move to tomorrow",
+  "missedLetGo": "Let it go",
+  "missedConfirmTitle": "Here’s what\nhappens next.",
+  "missedTo": "To {name}",
+  "@missedTo": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "missedNewFinish": "New finish date · {date}",
+  "@missedNewFinish": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "missedChapterNext": "Chapter 7 stays next on your plan.",
+  "missedSend": "Let it go and send",
+  "missedKeep": "Keep this session",
+  "missedMovedTitle": "Tomorrow works.",
+  "missedMovedBody": "Chapter 7 has a new place in your week.",
+  "missedSentTitle": "{name} has\nyour message.",
+  "@missedSentTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "missedSentBody": "Your consequence was chosen by you. Chapter 7 is still next on your plan.",
+  "missedQueuedTitle": "Saved here.\nSending later.",
+  "missedQueuedBody": "You’re offline. Your message to {name} is queued until you reconnect.",
+  "@missedQueuedBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "missedNoMessage": "No consequence message will be sent.",
+  "dailyBackToday": "Back to Today",
+  "dailyPreview": "Message preview. Nothing is sent or queued outside this preview.",
+  "dailyWelcomeBefore": "Welcome back, ",
+  "dailyWelcomeBody": "{count} sessions missed. Here’s where your plan stands.",
+  "@dailyWelcomeBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dailyRemaining": "{count} chapters left. Same rhythm.",
+  "@dailyRemaining": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dailyPickUp": "Pick up at Chapter {number}",
+  "@dailyPickUp": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "dailyNewFinish": "Your new finish date",
+  "materialUnavailableTitle": "Couldn’t find\nthat file.",
+  "materialUnavailableBody": "It may have moved or been renamed. Find it again to keep your place.",
+  "materialLastSeen": "Last seen",
+  "materialFindAgain": "Find it again",
+  "materialBackSession": "Back to session",
+  "taskRead": "Read the chapter",
+  "taskExamples": "Run the code examples",
+  "taskNote": "Write one note in your words",
+  "taskAdd": "Add a task",
+  "taskAddAction": "Add task",
+  "taskTitle": "Task",
+  "taskHint": "Build one small async example",
+  "taskError": "Add a task using up to 160 characters.",
+  "focusPermissionTitle": "Let Holdbuddy quiet your phone.",
+  "focusPermissionBody": "When a session starts, Holdbuddy turns on Do Not Disturb. When you end it, everything comes back.",
+  "focusOnlySessions": "Only during sessions",
+  "focusNoOtherTime": "Never at any other time",
+  "focusStarred": "Starred contacts still ring",
+  "focusEmergencies": "So real emergencies get through",
+  "focusAnyTime": "Turn it off any time",
+  "focusSettings": "In Settings, one switch",
+  "focusAllow": "Allow Do Not Disturb access",
+  "focusPreview": "Focus preview. Your phone settings do not change.",
+  "focusOn": "Focus on · apps silenced",
+  "createPlan": "New study plan",
+  "createPlanBody": "Scope, rhythm, and someone to hold you to it",
+  "createTaskBody": "To tonight’s session",
+  "createNote": "Write a note",
+  "createNoteBody": "Private, on this phone",
+  "createReminder": "Add a reminder",
+  "createReminderBody": "A deadline you can’t miss",
+  "notesTitle": "What stayed\nwith you.",
+  "notesBody": "Your learning, in your words.",
+  "notesFindTitle": "Find a thought.",
+  "notesSearch": "Search chapters or words",
+  "notesPrivacy": "Private. Stored only on this phone.",
+  "noteOnlyHere": "Only on this phone",
+  "notesGoToday": "Go to Today",
+  "notesNoMatch": "No notes match “{query}”.",
+  "@notesNoMatch": {
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "notesNoMatchBody": "Try a chapter name or another word.",
+  "notesClear": "Clear search",
+  "noteDateChapter": "{date} · Chapter {chapter}",
+  "@noteDateChapter": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "chapter": {
+        "type": "int"
+      }
+    }
+  },
+  "noteRequired": "Write a note before saving.",
+  "noteSavedPrivate": "Saved on this phone · only you can see this.",
+  "noteTryRecall": "Try a quick recall",
+  "noteSave": "Save note",
+  "noteSaved": "Note saved on this phone.",
+  "noteRecallTitle": "Before you look,\nwhat do you recall?",
+  "noteRecallFrom": "From your note on {chapter}.",
+  "@noteRecallFrom": {
+    "placeholders": {
+      "chapter": {
+        "type": "String"
+      }
+    }
+  },
+  "noteRecallWords": "In your own words",
+  "noteRecallBody": "No score. No timer. Just a moment to retrieve what you learned.",
+  "noteReveal": "Reveal my note",
+  "noteSkipRecall": "Skip recall",
+  "noteChooseChapter": "Chapter",
+  "planStartAnother": "Start another plan",
+  "planYourPlans": "Your plans",
+  "planOptions": "Plan options",
+  "planUpcoming": "Upcoming",
+  "planHistory": "History",
+  "planRenegotiate": "Renegotiate this plan",
+  "planFinished": "Finished",
+  "planTonight": "Tonight · 8:00 pm",
+  "planDoneOn": "Done · {date}",
+  "@planDoneOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "planPausedCount": "Paused · {done} of {total}",
+  "@planPausedCount": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "planStartNew": "Start a new plan",
+  "planLoadErrorTitle": "Your plan couldn’t\nbe opened.",
+  "planLoadErrorBody": "Your saved work has not been removed. Try opening it again.",
+  "planWholeTitle": "The whole plan.",
+  "planChapterDate": "{date} · 8:00 pm · 45 minutes",
+  "@planChapterDate": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "planCovered": "{done} of {total} chapters covered",
+  "@planCovered": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "planFinish": "Finish · {date}",
+  "@planFinish": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "planEarlyFinish": "{date} · 5 days early",
+  "@planEarlyFinish": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "alertsMarkRead": "Mark all read",
+  "alertsEarlier": "EARLIER",
+  "alertsToday": "TODAY",
+  "alertPartnerSkipped": "{name} let Wednesday go",
+  "@alertPartnerSkipped": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "alertRequest": "{name} asked you to be her witness",
+  "@alertRequest": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "alertSessionDue": "Session in 15 minutes",
+  "alertNudge": "{name} sent a nudge",
+  "@alertNudge": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "alertWitnessOpened": "{name} opened your plan",
+  "@alertWitnessOpened": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "alertRequestBody": "{plan} · she picked you",
+  "@alertRequestBody": {
+    "placeholders": {
+      "plan": {
+        "type": "String"
+      }
+    }
+  },
+  "alertDueBody": "Chapter 7 · Futures & async, 8:00 pm",
+  "alertRecalculatedBody": "New finish date: 4 December",
+  "alertSavedBody": "Chapter 6 · 45 minutes",
+  "alertWitnessBody": "Your witness is active",
+  "progressShare": "Copy progress summary",
+  "progressCopied": "Progress summary copied.",
+  "progressCopyError": "Couldn’t copy your summary. Try again.",
+  "progressShareSummary": "Holdbuddy: {sessions} sessions, {minutes} minutes studied, {comebacks} comebacks.",
+  "@progressShareSummary": {
+    "placeholders": {
+      "sessions": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      },
+      "comebacks": {
+        "type": "int"
+      }
+    }
+  },
+  "progressMinutes": "{minutes}m",
+  "@progressMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "progressDuration": "{hours}h {minutes}m",
+  "@progressDuration": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "progressTarget": "/ {hours}h {minutes}m",
+  "@progressTarget": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "progressSessions": "{count, plural, one{1 session} other{{count} sessions}}",
+  "@progressSessions": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "progressComebacks": "{count, plural, one{1 comeback} other{{count} comebacks}}",
+  "@progressComebacks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "progressSessionsLabel": "Sessions",
+  "progressStudied": "Studied",
+  "progressComebacksLabel": "Comebacks",
+  "progressMilestones": "Milestones",
+  "progressFirstComeback": "First comeback",
+  "progressReturn": "Return after a miss",
+  "progressHalfway": "Halfway",
+  "progressHalfwayBody": "12 chapters",
+  "progressTenNotes": "Ten notes",
+  "progressOwnWords": "In your own words",
+  "progressFinishLine": "Finish line",
+  "progressAllChapters": "All 24 chapters",
+  "sessionContinueAudio": "Continue listening · {time}",
+  "@sessionContinueAudio": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsTitle": "Make it feel\nlike yours.",
+  "settingsDone": "Done",
+  "settingsPro": "Holdbuddy Pro",
+  "settingsProBody": "No ads, monthly reports, themes",
+  "settingsAppearance": "Appearance",
+  "settingsLightDefault": "Light · default",
+  "settingsSessionReminders": "Session reminders",
+  "settingsStudyDays": "{time} · on study days",
+  "@settingsStudyDays": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsPartners": "Partners",
+  "settingsNameJoin": "{before} and {last}",
+  "@settingsNameJoin": {
+    "placeholders": {
+      "before": {
+        "type": "String"
+      },
+      "last": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsDeadlines": "Deadlines & reminders",
+  "settingsComingUp": "{count} coming up",
+  "@settingsComingUp": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsFocus": "Focus during sessions",
+  "settingsFocusBody": "Silence other apps · preview",
+  "settingsFiles": "Files on this phone",
+  "settingsFilesCount": "{count} files linked",
+  "@settingsFilesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsBlocked": "Blocked people",
+  "settingsBlockedCount": "{count, plural, one {1 person} other {{count} people}}",
+  "@settingsBlockedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsPrivacy": "Privacy & local data",
+  "settingsPrivacyBody": "Your notes never leave this phone",
+  "settingsBackup": "Backup and restore",
+  "settingsBackupBody": "Keep a personal copy. Restore on a new phone.",
+  "settingsPreviewTitle": "Preview only",
+  "appearanceTitle": "A calmer view.",
+  "appearanceBody": "Choose what feels right. Light is the default.",
+  "appearanceLight": "Light",
+  "appearanceLightBody": "Clean white surfaces",
+  "appearanceDark": "Dark",
+  "appearanceDarkBody": "Charcoal surfaces · white actions",
+  "appearanceSystem": "Use device setting",
+  "appearanceSystemBody": "Follow your phone’s appearance",
+  "appearanceSelected": "{description} · selected",
+  "@appearanceSelected": {
+    "placeholders": {
+      "description": {
+        "type": "String"
+      }
+    }
+  },
+  "reminderPreferencesTitle": "A nudge\nat the right time.",
+  "reminderPreferencesBody": "Reminders are for you. Your witness won’t get daily pings.",
+  "reminderStudyDay": "Study-day reminder",
+  "reminderDaysTime": "Mon, Wed, Fri · {time}",
+  "@reminderDaysTime": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "reminderBeforeSession": "Before a session",
+  "reminderAtStart": "At start time",
+  "reminderMinutesBefore": "{count} minutes before",
+  "@reminderMinutesBefore": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "reminderEnable": "Enable reminders",
+  "reminderNotNow": "Not now",
+  "reminderPreview": "Reminder preview. No notifications or phone settings change.",
+  "reminderEnabledTitle": "Reminders are on.",
+  "reminderEnabledBody": "We’ll remind you at {time} on Monday, Wednesday, and Friday.",
+  "@reminderEnabledBody": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "reminderDeniedTitle": "Reminders are off.",
+  "reminderDeniedBody": "Notifications are disabled in your phone’s settings. Your plan still works normally.",
+  "reminderOpenSettings": "Open phone settings",
+  "reminderKeepOff": "Keep reminders off",
+  "reminderPhoneSettingsPreview": "Preview only. On Android, open Settings → Apps → Holdbuddy → Notifications to manage permission.",
+  "backupPrivacy": "Export one file of your notes and app data to a place you choose. Your notes stay private.",
+  "backupExport": "Export a backup",
+  "backupRestore": "Restore a backup",
+  "backupPreviewBody": "Backup preview. File export and restore are not connected yet. No file is created or imported.",
+  "privacyLocalTitle": "Your notes.\nYour phone.",
+  "privacyNotes": "Private notes",
+  "privacyNotesBody": "Stored on this device. Never shared.",
+  "privacyWitness": "Witness visibility",
+  "privacyWitnessBody": "Plan name, session status, and your message",
+  "privacyChangingPhone": "Before changing phones",
+  "privacyChangingPhoneBody": "Your notes do not sync to your account. Export a backup to take your notes and app data with you.",
+  "privacyRemove": "Remove local data",
+  "privacyRemoveTitle": "This removes\nyour local work.",
+  "privacyRemoveBody": "Your learning plan, session history, and notes will be deleted from this phone. This can’t be undone.",
+  "privacyNoCloud": "Notes have no cloud copy",
+  "privacyNoCloudBody": "Save a personal copy before continuing.",
+  "privacyKeep": "Keep my data",
+  "privacyRemovalPreview": "Removal preview. Device data deletion is not connected yet. Your data is kept.",
+  "legalTitle": "Clear terms.\nPrivate learning.",
+  "legalAccount": "Your account identifies you and connects your witness. Your learning notes remain on this phone.",
+  "legalWitness": "Your witness sees only your plan name, whether a session happened, and your own message. You can revoke access at any time.",
+  "legalBeforeLaunch": "Before launch",
+  "legalReviewBody": "Final Terms of Service and Privacy Notice require product and legal review.",
+  "legalBackSignup": "Back to sign up",
+  "settingsSaveError": "Your preferences could not be saved. Try your choice again.",
+  "settingsPreferencesPreview": "Preference preview. Changes last for this app session.",
+  "uiPreview": "UI preview · changes stay in memory. Nothing is sent to another person.",
+  "planPreviewDates": "Sample finish dates are shown for this UI preview. Scheduling comes later.",
+  "changeRhythm": "My rhythm is too much",
+  "changeRhythmBody": "Study fewer days each week",
+  "changeScope": "The scope is too big",
+  "changeScopeBody": "Reduce the chapters you’ll cover",
+  "changeTarget": "I need more time",
+  "changeTargetBody": "Choose a later target date",
+  "changeOther": "Something else changed",
+  "changeOtherBody": "Edit the terms of your contract",
+  "changeHeading": "Make the plan\nfit your life.",
+  "changeDescription": "What needs to change? Your progress stays with you.",
+  "archiveThisPlan": "Archive this plan",
+  "reviewChanges": "Review changes",
+  "adjustRhythmTitle": "Renegotiate · rhythm",
+  "adjustRhythmHeading": "A lighter week.",
+  "adjustRhythmBody": "Keep your progress. Change what comes next.",
+  "adjustScopeTitle": "Renegotiate · scope",
+  "adjustScopeHeading": "Focus the scope.",
+  "adjustTargetTitle": "Renegotiate · time",
+  "adjustTargetHeading": "Give it\nmore room.",
+  "adjustOtherTitle": "Renegotiate · your terms",
+  "adjustOtherHeading": "What changed?",
+  "adjustOtherBody": "Update the part of your contract that needs attention.",
+  "adjustTotal": "Total chapters",
+  "adjustReason": "Reason (optional)",
+  "adjustChanged": "What changed?",
+  "adjustDate": "New target date",
+  "adjustPace": "Your pace can stay the same",
+  "adjustConsequence": "Consequence",
+  "adjustConsequenceBody": "Your words, sent only if you let go",
+  "adjustWitness": "Witness",
+  "adjustRhythmLabel": "Rhythm",
+  "adjustSaveMessage": "Save message",
+  "adjustMessage": "Your consequence message",
+  "adjustInvalid": "Choose valid terms before continuing.",
+  "recommitRhythm": "Same goal.\nA kinder rhythm.",
+  "recommitScope": "A focused scope.\nA clear finish.",
+  "recommitTarget": "More room.\nThe same intention.",
+  "recommitOther": "Your terms.\nYour commitment.",
+  "recommitHold": "Hold to recommit · 2 seconds",
+  "recommitHolding": "Keep holding to recommit",
+  "recommitWitness": "Your witness stays in your corner.",
+  "recommitPrivate": "This plan stays private.",
+  "recommitConsequence": "Your consequence is unchanged.",
+  "recommitMessageChanged": "Your consequence message has changed.",
+  "planChanged": "Your plan\nhas changed.",
+  "planChangedBody": "Your progress and notes stay with you.",
+  "seeUpdatedPlan": "See my updated plan",
+  "planFits": "A plan that fits.",
+  "planWhole": "The whole plan.",
+  "archiveHeading": "Close this chapter\non your terms.",
+  "archiveBody": "Your completed sessions and notes stay available. Future sessions stop.",
+  "archiveNotice": "Your learning stays with you",
+  "archiveNoticeBody": "No consequence message is sent. Your private notes stay on this phone.",
+  "archivePlan": "Archive plan",
+  "archiveKeep": "Keep my plan",
+  "archiveSaved": "Plan archived.",
+  "archiveReadNotes": "Read my notes",
+  "archiveNew": "Create a new plan",
+  "updatedUpcoming": "Upcoming",
+  "updatedHistory": "History",
+  "adjustScopeBody": "{done} chapters are already covered. Choose what’s still worth finishing.",
+  "@adjustScopeBody": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "adjustScopeMinimum": "Must be at least the {done} chapters completed.",
+  "@adjustScopeMinimum": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "adjustNewFinish": "New finish · {date}",
+  "@adjustNewFinish": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "adjustRemaining": "{count} chapters left · {days} sessions a week",
+  "@adjustRemaining": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "changeCovered": "{done} covered · {remaining} chapters remaining",
+  "@changeCovered": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
+  "changeDuration": "{minutes} minutes · finish {date}",
+  "@changeDuration": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "changeTargetSummary": "Target · {target}\nProjected finish · {finish}",
+  "@changeTargetSummary": {
+    "placeholders": {
+      "target": {
+        "type": "String"
+      },
+      "finish": {
+        "type": "String"
+      }
+    }
+  },
+  "changeTargetPace": "At {days} sessions a week, you’re projected to finish {date}. Your later target gives you room.",
+  "@changeTargetPace": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "archiveSavedBody": "Your {done} completed chapters and private notes are still here.",
+  "@archiveSavedBody": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      }
+    }
+  },
+  "updatedCovered": "{done} of {total} chapters covered",
+  "@updatedCovered": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "updatedFinish": "Finish · {date}",
+  "@updatedFinish": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "updatedTarget": "Target · {date}",
+  "@updatedTarget": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "updatedProjected": "{done} of {total} · projected {date}",
+  "@updatedProjected": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "changeSchedule": "{days} · {time}",
+  "@changeSchedule": {
+    "placeholders": {
+      "days": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "saveChanges": "Save changes",
+  "rhythmStartTime": "Start time",
+  "rhythmSessionLength": "Session length",
+  "peopleTitle": "Partners",
+  "peopleBody": "People who hold you to your word, and the people you hold to theirs.",
+  "peopleRequests": "REQUESTS",
+  "peopleHoldingYou": "HOLDING YOU",
+  "peopleYouHold": "YOU’RE HOLDING",
+  "peopleAccept": "Accept",
+  "peopleDecline": "Decline",
+  "peopleMutual": "Mutual",
+  "peopleLink": "Link",
+  "peopleInvite": "Invite someone",
+  "peopleNoPartners": "Your corner is open. Invite someone when you’re ready.",
+  "peoplePlan": "Their plan",
+  "peopleMissed": "Session missed",
+  "peopleOnPace": "Session happened",
+  "peopleNoSession": "No session yet",
+  "peopleSessionWeek": "Sessions this week",
+  "peopleOptions": "Partner options",
+  "peopleSendNudge": "Send a nudge",
+  "peopleMessageLabel": "THEIR OWN WORDS",
+  "peopleNoMessage": "No message shared.",
+  "peoplePrivate": "Only this plan’s name, session status and their own message are shared.",
+  "mutualTitle": "Hold each other?",
+  "mutualBody": "Keep each other to your plans, and you’ll both see the same quiet updates.",
+  "mutualLater": "Not now",
+  "peopleInviteFailed": "This invite didn’t go through.",
+  "witnessPrivacyTitle": "Private stays private",
+  "witnessPrivacyBody": "Your notes and material are never shared. No daily notifications are sent.",
+  "witnessCanSee": "What your witness can see",
+  "witnessSeeBody": "Plan name, session status and your own message",
+  "witnessReplace": "Replace witness",
+  "witnessRemove": "Remove witness access",
+  "witnessRemoveButton": "Remove witness",
+  "witnessKeep": "Keep your witness",
+  "witnessManagePrivate": "Your plan\nis private again.",
+  "witnessRemovedBody": "Their link no longer works. No more messages will be sent to them.",
+  "witnessInviteElse": "Invite someone else",
+  "backSettings": "Back to settings",
+  "backPlan": "Back to the plan",
+  "witnessPendingHeading": "Invitation prepared.",
+  "witnessPendingBody": "They can open the link without an app or account when sharing is connected.",
+  "witnessWaiting": "Waiting for a response",
+  "witnessWaitBody": "You can keep learning while you wait.",
+  "witnessResend": "Resend invitation",
+  "witnessReminded": "Reminder prepared",
+  "witnessChangeContact": "Change contact details",
+  "witnessContactName": "Their name",
+  "witnessContactAddress": "Email or phone",
+  "witnessPrepare": "Prepare invitation",
+  "witnessContactError": "Enter a name and a valid email or phone number.",
+  "witnessContactPreview": "Invitations and reminders are previews. Device sharing and delivery come later.",
+  "witnessOfflineHeading": "Ready to send\nwhen you reconnect.",
+  "witnessOfflineBody": "This invitation is queued in this preview. Keep learning while it waits.",
+  "witnessNudgeHeading": "Nudge prepared.",
+  "witnessNudgeBody": "They’ll see that you checked in when message delivery is connected.",
+  "witnessAckHeading": "They know\nyou’re here.",
+  "witnessAckBody": "You’ve acknowledged this sample plan. Come back whenever you want to check in.",
+  "witnessViewPlan": "View the plan",
+  "witnessStopHeading": "Step back\nwhen you need to.",
+  "witnessStopBody": "You’ll stop receiving messages and lose access to this plan. They can invite someone else.",
+  "witnessStop": "Stop being a witness",
+  "witnessKeepSharing": "Keep witnessing",
+  "witnessEndedHeading": "This link\nis no longer active.",
+  "witnessEndedBody": "Access may have been removed or the invitation may have expired. Ask the learner for a new invitation.",
+  "witnessRemoveHeading": "Make the plan\nprivate again.",
+  "witnessRemoveBody": "Their link will stop working and no more consequence messages will be sent to them.",
+  "witnessRemoveNote": "You can invite a new witness at any time.",
+  "witnessInvitationHeading": "Be in their\ncorner.",
+  "witnessInvitationBody": "You’ve been invited to witness a learning plan.",
+  "witnessInvitationInfo": "You can see whether sessions happened and send a nudge. You only receive the learner’s own message. You can stop at any time.",
+  "witnessAcceptInvite": "Accept invitation",
+  "witnessDeclineInvite": "Decline invitation",
+  "safetyMute": "Mute nudges",
+  "safetyUnmute": "Unmute nudges",
+  "safetyMuteBody": "Stay partners, just no nudges",
+  "safetyBlockBody": "They can’t message you or see your plans",
+  "safetyReport": "Report a problem",
+  "safetyReportBody": "Unkind, abusive or unsafe messages",
+  "safetyBlock1": "They can’t message or nudge you",
+  "safetyBlock2": "They can’t see your plans",
+  "safetyBlock3": "You stop being their witness too",
+  "safetyBlock4": "They won’t be told you blocked them",
+  "safetyCancel": "Cancel",
+  "safetyWhatHappened": "What happened?",
+  "safetyPrivate": "Reports are private. They won’t know you sent one.",
+  "safetyReasonAbuse": "Unkind or abusive messages",
+  "safetyReasonNudges": "Too many nudges after I asked to stop",
+  "safetyReasonUnknown": "I don’t know this person",
+  "safetyReasonOther": "Something else",
+  "safetyIncludeMessage": "Include their last message",
+  "safetyNotTold": "They won’t be told",
+  "safetySend": "Prepare report",
+  "safetyThanks": "Thanks for telling us.",
+  "safetyReportPrepared": "Your report is prepared in this preview. Review and email delivery are not connected yet.",
+  "safetyBlockedSummary": "They are blocked and removed from your partners",
+  "safetyBlockedAccess": "They can’t message you or see your plans",
+  "safetyBlockedPrivacy": "They see the partnership end, nothing more",
+  "safetyReportOnly": "The report is private. Your partnership stays active.",
+  "safetyBackPartners": "Back to partners",
+  "safetyBlockedPeople": "Blocked people",
+  "safetyBlockedBody": "They can’t message you or see your plans.",
+  "safetyUnblock": "Unblock",
+  "safetyUnblockBody": "Unblocking doesn’t bring the partnership back. You can invite them again.",
+  "safetyNobodyBlocked": "Nobody is blocked.",
+  "safetyError": "Couldn’t save that change. Try again.",
+  "peopleRequest": "{name} wants you as their witness",
+  "@peopleRequest": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "peopleSees": "Sees {plan}",
+  "@peopleSees": {
+    "placeholders": {
+      "plan": {
+        "type": "String"
+      }
+    }
+  },
+  "peoplePlanStatus": "{plan} · {status}",
+  "@peoplePlanStatus": {
+    "placeholders": {
+      "plan": {
+        "type": "String"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "mutualBeWitness": "Be {name}’s witness",
+  "@mutualBeWitness": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "witnessInCorner": "{name} is\nin your corner.",
+  "@witnessInCorner": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "witnessAccepted": "Invitation accepted · {contact}",
+  "@witnessAccepted": {
+    "placeholders": {
+      "contact": {
+        "type": "String"
+      }
+    }
+  },
+  "safetyBlockName": "Block {name}",
+  "@safetyBlockName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "safetyBlockQuestion": "Block {name}?",
+  "@safetyBlockQuestion": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "safetyAlsoBlock": "Also block {name}",
+  "@safetyAlsoBlock": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "safetyReportBlock": "Report or block {name}",
+  "@safetyReportBlock": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "safetyBlockedDate": "Blocked {date}",
+  "@safetyBlockedDate": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "profileName": "Your name",
+  "profileEmail": "Email",
+  "profileStudying": "What are you studying?",
+  "profilePhoto": "Change photo",
+  "profilePhotoPreview": "Choose a bundled preview photo. Camera and gallery access are not connected yet.",
+  "profilePhotoCurrent": "Profile photo",
+  "profilePhotoAlternate": "Alternate profile photo",
+  "profileSave": "Save changes",
+  "profileInvalidName": "Enter your name.",
+  "profileInvalidStudying": "Tell us what you’re studying.",
+  "profileSaveError": "Couldn’t save your profile. Try again.",
+  "profileDelete": "Delete account",
+  "accountDeleteTitle": "Delete your account?",
+  "accountDeleteBody": "This can’t be undone when account deletion is connected. Notes remain local; linked files stay in their original locations.",
+  "accountDeleteProfile": "Your profile and photo",
+  "accountDeletePlans": "All plans, sessions and tasks",
+  "accountDeletePartners": "Partners and witness messages",
+  "accountDeleteDeadlines": "Deadline reminders",
+  "accountDeleteConfirm": "Type DELETE to confirm",
+  "accountDeleteWord": "DELETE",
+  "accountDeleteAction": "Delete my account",
+  "accountKeep": "Keep my account",
+  "accountDeletePreview": "UI preview · no account, server data, notes or linked files are deleted.",
+  "accountDeletedTitle": "Account deletion preview",
+  "accountDeletedBody": "You confirmed the deletion flow. No account was deleted and no confirmation email was sent.",
+  "accountBackStart": "Back to start",
+  "updatedTab": "{label} · {count}",
+  "@updatedTab": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "updatedNext": "Next · {date}",
+  "@updatedNext": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "updatedChapter": "Chapter {number} · {name}",
+  "@updatedChapter": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "updatedChapterTitle": "{number}. {name}",
+  "@updatedChapterTitle": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "updatedChapterDate": "{date} · {time} · {minutes} minutes",
+  "@updatedChapterDate": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "contractSaveError": "Couldn’t save this contract.",
+  "contractSaveErrorBody": "Your draft is still here. Hold again to try saving.",
+  "deadlineTitle": "Reminders",
+  "deadlineSubtitle": "Deadlines you can’t afford to forget.",
+  "deadlineUpcoming": "Upcoming",
+  "deadlineDone": "Done",
+  "deadlineArchived": "Archived",
+  "deadlineAdd": "Add a reminder",
+  "deadlineNew": "New reminder",
+  "deadlineEdit": "Edit reminder",
+  "deadlineWhatDue": "What’s due?",
+  "deadlineTitleRequired": "Give this reminder a title.",
+  "deadlinePastDate": "Choose today or a future date.",
+  "deadlineSchool": "School",
+  "deadlineAdmin": "Admin",
+  "deadlinePersonal": "Personal",
+  "deadlineSave": "Save reminder",
+  "deadlineMarkDone": "Mark as done",
+  "deadlineArchive": "Archive",
+  "deadlineEditAction": "Edit this reminder",
+  "deadlineOnDay": "On the day",
+  "deadlineDayShort": "Day",
+  "deadlineNext": "Next",
+  "deadlinePassed": "Passed",
+  "deadlineOff": "Off",
+  "deadlineDueToday": "Due today",
+  "deadlineFinishedOnDay": "on the day",
+  "deadlineRetained": "Finished reminders stay here. Archived ones move out of sight but are never deleted.",
+  "deadlineUpcomingEmpty": "Nothing coming up",
+  "deadlineUpcomingEmptyBody": "Add an assignment, form or personal deadline to keep it in sight.",
+  "deadlineDoneEmpty": "Room for what you finish",
+  "deadlineDoneEmptyBody": "Mark a reminder as done and it will stay here, with when you finished.",
+  "deadlineArchivedEmpty": "Nothing archived",
+  "deadlineArchivedEmptyBody": "Archived reminders stay here without being deleted.",
+  "deadlineNotFound": "This reminder is unavailable",
+  "deadlineNotFoundBody": "Return to Reminders to choose another one.",
+  "deadlineReturn": "Back to reminders",
+  "deadlinePreview": "In-memory preview. No notifications are scheduled; changes reset when the app restarts.",
+  "deadlineSaveFailed": "Couldn’t save this reminder.",
+  "deadlineTryAgain": "Your reminder is still here. Try the action again.",
+  "deadlinePreviousMonth": "Previous month",
+  "deadlineNextMonth": "Next month",
+  "deadlineDaysAway": "in {days} days",
+  "@deadlineDaysAway": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "deadlineOverdue": "{days} days overdue",
+  "@deadlineOverdue": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "deadlineDue": "{category} · due {date}",
+  "@deadlineDue": {
+    "placeholders": {
+      "category": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "deadlineDetailDue": "{category} · due {date} · {timing}",
+  "@deadlineDetailDue": {
+    "placeholders": {
+      "category": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      },
+      "timing": {
+        "type": "String"
+      }
+    }
+  },
+  "deadlineFinished": "Done {date} · {timing}",
+  "@deadlineFinished": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "timing": {
+        "type": "String"
+      }
+    }
+  },
+  "deadlineEarly": "{days} days early",
+  "@deadlineEarly": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "deadlineLate": "{days} days late",
+  "@deadlineLate": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "deadlineWeeklyRule": "Due in {days} days, so we’ll remind you weekly",
+  "@deadlineWeeklyRule": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "deadlineDailyRule": "Due in {days} days, so we’ll remind you daily",
+  "@deadlineDailyRule": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "deadlineWeeks": "{count} weeks",
+  "@deadlineWeeks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deadlineDays": "{count} days",
+  "@deadlineDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deadlineWeeksBefore": "{count} weeks before",
+  "@deadlineWeeksBefore": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deadlineDaysBefore": "{count} days before",
+  "@deadlineDaysBefore": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deadlineStopWeeksShort": "{count}w",
+  "@deadlineStopWeeksShort": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deadlineStopDaysShort": "{count}d",
+  "@deadlineStopDaysShort": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "materialLibraryTitle": "Your material",
+  "materialLibraryEmpty": "Your material has room to grow",
+  "materialLibraryEmptyBody": "Add a material preview for this plan to see its reader and player.",
+  "materialNotStarted": "Not started",
+  "materialOpenLink": "Needs a connection in the finished app",
+  "materialLibraryPreview": "Sample material only. No file is opened, copied or uploaded.",
+  "materialReaderPreview": "Reader preview. This is a sample page, not an opened PDF.",
+  "materialAudioPreview": "Player preview. No audio is played; controls change the preview only.",
+  "materialFormatPreview": "This viewer is still a preview",
+  "materialFormatBody": "Document and link rendering will be connected in the data phase. Your original material stays where it is.",
+  "materialSaveError": "Couldn’t update this material preview.",
+  "materialSaveErrorBody": "Your material is still here. Try the action again.",
+  "materialReaderPages": "Choose a page",
+  "materialPreviousPage": "Previous page",
+  "materialNextPage": "Next page",
+  "materialPlaybackSpeed": "Playback speed",
+  "materialPlay": "Play preview",
+  "materialPause": "Pause preview",
+  "materialSkipBack": "Back 15 seconds",
+  "materialSkipForward": "Forward 15 seconds",
+  "materialWriteNote": "Write a note for this chapter",
+  "materialNoSelection": "No material selected",
+  "materialNoSelectionBody": "Open Your material and choose a sample to continue.",
+  "materialBackLibrary": "Back to material",
+  "materialPreviewCount": "{count} sample files for this plan",
+  "materialLibraryBody": "{plan} · opened from where they live on your phone, even offline.",
+  "@materialLibraryBody": {
+    "placeholders": {
+      "plan": {
+        "type": "String"
+      }
+    }
+  },
+  "materialPages": "{pages} pages · {size} MB",
+  "@materialPages": {
+    "placeholders": {
+      "pages": {
+        "type": "int"
+      },
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "materialMinutes": "{minutes} min · {size} MB",
+  "@materialMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "materialPagePosition": "Page {page} of {pages}",
+  "@materialPagePosition": {
+    "placeholders": {
+      "page": {
+        "type": "int"
+      },
+      "pages": {
+        "type": "int"
+      }
+    }
+  },
+  "materialAudioPosition": "{minute} of {minutes} min",
+  "@materialAudioPosition": {
+    "placeholders": {
+      "minute": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@materialPreviewCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "materialLecture": "{plan} · lecture {number}",
+  "@materialLecture": {
+    "placeholders": {
+      "plan": {
+        "type": "String"
+      },
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "materialSessionTime": "Focus · {time}",
+  "@materialSessionTime": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "materialPlaybackSpeedValue": "{speed}×",
+  "@materialPlaybackSpeedValue": {
+    "placeholders": {
+      "speed": {
+        "type": "String"
+      }
+    }
+  },
+  "materialAudioTiming": "{position} of {duration}",
+  "@materialAudioTiming": {
+    "placeholders": {
+      "position": {
+        "type": "String"
+      },
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "materialOpenPdf": "Open PDF",
+  "proTitle": "Holdbuddy Pro",
+  "proBody": "Every feature stays free. Pro clears the ads and adds a few things that are just nice to have.",
+  "proRestore": "Restore",
+  "proNoAds": "No ads, anywhere",
+  "proNoAdsBody": "Free shows ads outside sessions only",
+  "proReport": "Monthly progress report",
+  "proReportBody": "Your month in one page, shareable as PDF",
+  "proThemes": "App icons and themes",
+  "proThemesBody": "Make Holdbuddy look like yours",
+  "proMonthly": "Monthly",
+  "proLifetime": "Lifetime",
+  "proMonthlyCadence": "/ month",
+  "proLifetimeCadence": "once",
+  "proMonthlyTerms": "Cancel any time",
+  "proLifetimeTerms": "Pay once, keep it",
+  "proBestValue": "Best value",
+  "proCurrencySymbol": "₦",
+  "proBilling": "Paid through Google Play. Free stays free.",
+  "proPreview": "Purchase preview. No payment is taken and no store purchase is made.",
+  "proWelcomeTitle": "You’re Pro.",
+  "proWelcomeBody": "Your Pro preview is now ad-free. Thanks for backing Holdbuddy. Monthly reports, icons and themes will arrive with the full version.",
+  "proWelcomePreview": "Pro preview only. No purchase was made and no monthly report is scheduled.",
+  "proBackToday": "Back to Today",
+  "proRestoreEmpty": "No preview purchase to restore. Choose a plan to preview Pro.",
+  "proRestoreFound": "Your Pro preview is active. No store purchase was restored.",
+  "proFailure": "Couldn’t update your Pro preview.",
+  "proFailureBody": "Try the action again. Every core feature is still free.",
+  "proActiveBody": "Pro preview active · no ads",
+  "proSponsored": "Sponsored",
+  "proRemoveAds": "Remove ads",
+  "proAdTitle": "Notebooks made for exam season",
+  "proAdBrand": "Example Brand",
+  "proAdLearnMore": "Learn more",
+  "proAdPreview": "Ad preview. No ad network is connected.",
+  "proAdDetails": "This is a sample sponsored card. No advertiser page is opened.",
+  "proPreviewPlan": "Preview {plan} · {price}",
+  "@proPreviewPlan": {
+    "placeholders": {
+      "plan": {
+        "type": "String"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "sessionUnfinishedTitle": "Finish your current session",
+  "sessionUnfinishedBody": "You still have a session for {planName} to finish. Return to it before starting another session. Your timer and notes are waiting.",
+  "@sessionUnfinishedBody": {
+    "placeholders": {
+      "planName": {
+        "type": "String"
+      }
+    }
+  },
+  "sessionReturnToCurrent": "Return to session",
+  "sessionNotNow": "Not now",
+  "todayChapterSummary": "Chapter {chapter} of {total} · {planName} · {minutes} min",
+  "@todayChapterSummary": {
+    "placeholders": {
+      "chapter": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "planName": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "sessionReceiptPrivate": "Your note is saved on this phone. Only you can read it.",
+  "todayOfflineSchedule": "{time} · {minutes} min",
+  "@todayOfflineSchedule": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "missedPrivateTitle": "Your plan stays private",
+  "missedWithoutWitness": "No active witness is linked to this plan. No message will be sent."
+}

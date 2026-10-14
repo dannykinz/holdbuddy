@@ -1,0 +1,15 @@
+enum AuthOutcome {
+  created,
+  signedIn,
+  verified,
+  codeSent,
+  resetSent,
+  passwordSaved,
+  signedOut,
+  invalidCredentials,
+  expired,
+  offline,
+  cancelled,
+  invalidInput,
+  unavailable,
+}

@@ -1,0 +1,1 @@
+enum ProProduct { monthly, lifetime }
